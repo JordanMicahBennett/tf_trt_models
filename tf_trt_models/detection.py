@@ -1,3 +1,4 @@
+""" Location of download_detection_model"""
 from object_detection.protos import pipeline_pb2
 from object_detection.protos import image_resizer_pb2
 from object_detection import exporter
@@ -75,6 +76,7 @@ def get_output_names(model):
     if model == 'mask_rcnn_resnet50_atrous_coco':
         output_names.append(MASKS_NAME)
     return output_names
+
 
 
 def download_detection_model(model, output_dir='.'):
